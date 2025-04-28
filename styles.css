@@ -1,0 +1,186 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: #e3f2fd; /* Azul claro */
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* Cabecera */
+header {
+    background: #473a3a; 
+    color: #fff;
+    display: flex;
+    justify-content: flex-start; /* Alinea todo hacia la izquierda */
+    align-items: center;
+    padding: 20px 40px;
+    margin: 0; 
+}
+
+header .logo {
+    max-width: 80px; /* Tamaño ajustable del logo */
+    margin-left: -500px;
+}
+
+.nav-links {
+    font-size: 25px; 
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    flex-grow: 1;
+    margin-top: -80px; 
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: background 0.3s ease;
+}
+
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px; /* Espacio entre el texto y el carrusel */
+}
+
+/* Estilo para el contenedor de las imágenes */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Estilo para las imágenes */
+.carousel-image {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    overflow: hidden; /* Esto es importante para que las imágenes no se desborden */
+}
+
+
+/* Estilo para las flechas de navegación */
+button {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+.nav-links li a:hover {
+    background: #e53935;
+    border-radius: 5px;
+}
+
+header .btn-inscribirse {
+    background: #e53935;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+header .btn-inscribirse:hover {
+    background: #c62828;
+}
+
+
+.examen-text {
+    font-weight: bold; /* Pone el texto en negrita */
+    font-size: 22px; /* Aumenta el tamaño de la fuente */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0; /* Elimina el margen por defecto */
+    flex: -20;
+
+    
+}
+
+/* Estilo para la imagen */
+.examen-img {
+    width: 30%; /* Ajusta el tamaño de la imagen */
+    float: right; /* Coloca la imagen a la derecha */
+    margin-right: -400px; /* Deja un espacio entre el texto y la imagen */
+    max-height: 200px; /* Limita la altura de la imagen para que no sea demasiado grande */
+    margin-top: -200px; 
+}
+
+
+
+/* Sección de Información */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección del Chatbot */
+.chatbot-section {
+    background: #e3f2fd;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #473a3a;
+    color: white;
+    border-top: 3px solid #473a3a;
+}

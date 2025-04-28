@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNMSM - Examen de Admisión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="header">
+        <div class="container">
+            <img src="logo_Sanmarco.png" alt="Logo San Marcos" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#INFORMACION">INFORMACION</a></li>
+                    <li><a href="#EXAMEN">EXAMEN</a></li>
+                    <li><a href="#CARRERAS">CARRERAS</a></li>
+                    <li><a href="#INTERNACIONAL">INTERNACIONAL</a></li>
+                    <li><a href="#ALUMNOS">ALUMNOS</a></li>
+                    <li><a href="#BLOGS">BLOGS</a></li>
+                    <li><a href="#BECAS">BECAS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Información -->
+    <section id="informacion" class="info-section">
+        <div class="container">
+            <h2>UN POCO SOBRE LA UNMSM</h2>
+            <p>La universidad más antigua de América, fundada en 1551.</p>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="imagen1.jpg" alt="Campus 1" class="carousel-image">
+                    <img src="imagen2.jpg" alt="Campus 2" class="carousel-image">
+                    <img src="imagen3.jpg" alt="Campus 3" class="carousel-image">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+      
+        </div>
+    </section>
+
+    <!-- Sección del Examen -->
+    <section id="examen" class="exam-section">
+        <div class="container">
+            <h2>HERRAMIENTA NUEVA IMPLEMENTADA</h2>
+            <p class="examen-text">
+                Este chatbot, desarrollado por estudiantes de la Universidad Nacional Mayor de San Marcos, está diseñado para responder dudas y consultas de los postulantes sobre el proceso de examen de admisión. Con su ayuda, los futuros estudiantes podrán obtener información rápida y precisa sobre los requisitos, fechas y demás detalles del examen de admisión a San Marcos.</p>
+        <img src="CHATBOT.JPG" alt="Proceso de examen" class="examen-img">   
+        </div>
+    </section>
+
+    <!-- Sección del Chatbot -->
+    <section id="chatbot" class="chatbot-section">
+        <div class="container">
+            <div id="chatbox"></div>
+            <script type="text/javascript">
+                (function(d, t) {
+                    var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                    v.onload = function() {
+                      window.voiceflow.chat.load({
+                        verify: { projectID: '6743d137ec59d37e46490ee0' },
+                        url: 'https://general-runtime.voiceflow.com',
+                        versionID: 'production'
+                      });
+                    }
+                    v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
+                    v.type = "text/javascript"; 
+                    s.parentNode.insertBefore(v, s);
+                })(document, 'script');
+            </script>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <p>&copy; 2025 Universidad Nacional Mayor de San Marcos</p>
+        </div>
+    </footer>
+</body>
+</html>
